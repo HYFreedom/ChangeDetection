@@ -26,16 +26,15 @@
   
   1. **Clone this project and create a conda environment:**
      ```bash
-     git clone https://github.com/TechJots-Liu/CF-SCSNet.git
-     cd CF-SCSNet
+     git clone https://github.com/HYFreedom/ChangeDetection.git
+     cd CMCD
      
-     conda create -n cf_scsnet python=3.10.9
-     conda activate cf_scsnet
+     conda create -n cmcd python=3.10.9
+     conda activate cmcd
   2. **Install pytorch and torchvision matching your CUDA version:**
      ```bash
      pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
   3. **Install requirements:**
      ```bash
      pip install -r requirements.txt
-  4. **Load the Roberta word encoder locally**
-     [Roberta-base](https://huggingface.co/FacebookAI/roberta-base)
+
