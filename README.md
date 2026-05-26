@@ -14,13 +14,11 @@
 
 ## :fallen_leaf: Visualization
 <details open>
-  <div align="center">
-    < img src="result/可视化-CLCD.png" width="80%">
-  </div>
-   <div align="center">
-    < img src="result/可视化-PXCLCD.png" width="80%">
-  </div>
-</details>
+<div align="center">
+  <img src="result/可视化-CLCD.png" width="80%">
+  <br>
+  <img src="result/可视化-PXCLCD.png" width="80%">
+</div>
 
 ## :computer: Installation
 <details open>
