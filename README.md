@@ -1,5 +1,5 @@
 # CMCD: a cropland mask-guided remote sensing change detection framework for suppressing pseudo changes
-![overview](statics/Overall.png)
+![overview](figs/overview.png)
 ## :evergreen_tree: Overview
 
 - **Research Background**：Agricultural production serves as the bedrock of global food security and relies fundamentally on the quantity and quality of cropland resources. The increasingly severe conversion of cropland to non-agricultural uses demands urgent intervention. Remote sensing imagery enables accurate land monitoring and provides a scientific foundation for detecting cropland loss.
@@ -8,10 +8,9 @@
 ## :bar_chart: Model test dataset
 | **Dataset**         | Dataset download |
 | :------------------ | :--------------------- |
-| **Public generalization(CLCD)** | [dataset](https://www.selectdataset.com/dataset/b6bd538e3e21259cf6958130ef5ed70a)   |
+| **Public generalization(CLCD)** | [dataset](https://github.com/liumency/CropLand-CD)  |
 | **Public generalization(PX-CLCD)** | [dataset](https://github.com/niuzhan/Peixian-Cultivated-land-Change-detection-dataset) |
-| **Public generalization(RRSIS-M)** | [dataset](https://www.selectdataset.com/dataset/5bbd39a0d71020dd530930d9bb39eae7)   |
-| **Public generalization(RRSIS-L)** | [dataset](https://www.selectdataset.com/dataset/5bbd39a0d71020dd530930d9bb39eae7)   |
+| **Public generalization(LEVIR-CD)** | [dataset](https://opendatalab.org.cn/OpenDataLab/LEVIR-CD)   |
 
 ## :fallen_leaf: Visualization
 <details open>
