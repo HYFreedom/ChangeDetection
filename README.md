@@ -1,9 +1,11 @@
-# CMCD: a cropland mask-guided remote sensing change detection framework for suppressing pseudo changes
+# GMCD: A generative mask-guided framework for farmland change detection under seasonal variations
 ![overview](figs/overview.png)
 ## :evergreen_tree: Overview
 
-- **Research Background**：Agricultural production serves as the bedrock of global food security and relies fundamentally on the quantity and quality of cropland resources. The increasingly severe conversion of cropland to non-agricultural uses demands urgent intervention. Remote sensing imagery enables accurate land monitoring and provides a scientific foundation for detecting cropland loss.
-- **Technical route**：To the best of our knowledge, this study marks the first effort to integrate cropland mask-guided spatial attention, multi-level feature enhancement, and boundary refinement strategies from dual‑temporal remote sensing imagery—for accurate cropland change detection. Through a mask-guided self‑supervised learning mechanism, the proposed approach enables, for the first time, precise detection of cropland changes in complex backgrounds and high‑interference scenarios (e.g., seasonal pseudo‑changes, non‑agricultural land interference). We validate CMCD on multiple cropland change detection datasets, and the results demonstrate that the proposed framework achieves high‑precision cropland change detection with robust suppression of false positives.
+## Introduction
+Accurate detection of farmland changes from bi-temporal remote sensing imagery is challenging. Seasonal phenological variations produce substantial pseudo changes, while non-farmland objects with farmland-like appearance introduce extra false detections. To tackle these issues, we propose a generative mask-guided framework for farmland change detection, which embeds farmland-specific spatial priors into the change detection pipeline.
+The framework first generates farmland probability masks from encoded bi-temporal images. These masks adaptively enhance farmland-related features and suppress non-farmland interference. We further design a cross-temporal attention-convolutional pyramid fusion module to model temporal correspondence and selectively highlight discriminative change information at multiple scales. The model is jointly optimized by three loss terms: primary change detection loss, farmland mask loss, and cross-temporal consistency loss.
+Experiments on CLCD and PX-CLCD datasets show that our method achieves F1-scores of 78.06% and 96.48%, outperforming the best competitors by 0.53% and 1.42%. The corresponding IoUs are 64.02% and 93.20%, with gains of 1.01% and 2.61%. Qualitative and feature-level analyses verify that the mask-guided mechanism reduces false detections caused by seasonal variations and complex non-farmland backgrounds. Additional experiments on LEVIR-CD building change detection dataset demonstrate the generalization capability of our architecture.
  
 ## :bar_chart: Model test dataset
 | **Dataset**         | Dataset download |
@@ -27,7 +29,7 @@
   1. **Clone this project and create a conda environment:**
      ```bash
      git clone https://github.com/HYFreedom/ChangeDetection.git
-     cd CMCD
+     cd GMCD
      
      conda create -n cmcd python=3.10.9
      conda activate cmcd
